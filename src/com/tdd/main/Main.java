@@ -35,6 +35,7 @@ public class Main {
 		double resultado = integralSimpson.integrar(x, dof, num_seg, error);
 		System.out.println("El resultado de la integral es: " + resultado);
 		scanner.close();
+		System.exit(0);
 	}
 
 }

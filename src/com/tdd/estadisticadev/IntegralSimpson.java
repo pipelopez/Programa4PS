@@ -17,6 +17,7 @@ public class IntegralSimpson {
 	public double hacerOperaciones(double x, double dof, double num_seg) {
 		DistribucionT distribucionT = new DistribucionT();
 		double w = (x / num_seg);
+		double multiplicador = (w / 3);
 		double xi = 0;
 		double resultado = 0;
 		for (int i = 0; i <= num_seg; i++) {
@@ -35,6 +36,6 @@ public class IntegralSimpson {
 				}
 			}
 		}
-		return resultado * (w / 3);
+		return resultado*multiplicador;
 	}
 }
